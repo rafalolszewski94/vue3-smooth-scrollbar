@@ -1,7 +1,11 @@
 {
   "name": "vue3-smooth-scrollbar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rafalolszewski94/vue3-smooth-scrollbar.git"
+  },
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vue3-smooth-scrollbar src/SmoothScrollbar.vue",
