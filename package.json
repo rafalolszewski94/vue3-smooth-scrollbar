@@ -4,6 +4,7 @@
     "type": "git",
     "url": "https://github.com/rafalolszewski94/vue3-smooth-scrollbar.git"
   },
+  "license": "MIT",
   "version": "1.0.1",
   "private": false,
   "scripts": {
