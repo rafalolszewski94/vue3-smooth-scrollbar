@@ -5,7 +5,7 @@
     "url": "https://github.com/rafalolszewski94/vue3-smooth-scrollbar.git"
   },
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
