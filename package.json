@@ -9,7 +9,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vue3-smooth-scrollbar src/SmoothScrollbar.vue",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "release": "release-it"
   },
   "main": "./dist/vue3-smooth-scrollbar.umd.js",
   "browser": {
@@ -44,6 +45,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.2.0",
     "prettier": "^2.2.1",
+    "release-it": "^14.6.2",
     "vue-loader": "^15.9.7"
   }
 }
