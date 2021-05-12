@@ -4,12 +4,28 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue3-smooth-scrollbar src/SmoothScrollbar.vue",
     "lint": "vue-cli-service lint"
   },
+  "main": "./dist/vue3-smooth-scrollbar.umd.js",
+  "browser": {
+    "./sfc": "src/SmoothScrollbar.vue"
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "dependencies": {
     "core-js": "^3.8.3",
+    "lodash": "^4.17.21",
+    "smooth-scrollbar": "^8.6.2",
     "vue": "^3.0.4"
+  },
+  "peerDependencies": {
+    "smooth-scrollbar": "^8.6.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -20,8 +36,10 @@
     "@vue/compiler-sfc": "^3.0.4",
     "@vue/eslint-config-prettier": "^6.0.0",
     "eslint": "^7.20.0",
-    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.2.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "vue-loader": "^15.9.7"
   }
 }

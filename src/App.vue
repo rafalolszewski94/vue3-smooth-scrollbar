@@ -1,26 +1,56 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="container">
+    <SmoothScrollbar>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </SmoothScrollbar>
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import SmoothScrollbar from "@/SmoothScrollbar"
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-  },
-};
+  components: { SmoothScrollbar },
+}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+}
+
+.box {
+  width: 100%;
+  height: 800px;
+}
+.box:nth-child(1) {
+  background-color: #8fffe4;
+}
+.box:nth-child(2) {
+  background-color: #e0ceff;
+}
+.box:nth-child(3) {
+  background-color: #ffdd9c;
 }
 </style>

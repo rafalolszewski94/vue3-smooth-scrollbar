@@ -1,24 +1,26 @@
 # vue3-smooth-scrollbar
 
+Based on [vue-smooth-scrollbar](https://github.com/BlackBP/vue-smooth-scrollbar)
+
+## Requirements
+- Vue 3
+
 ## Project setup
 ```
-yarn install
+npm run install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+npm run serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+npm run build
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
